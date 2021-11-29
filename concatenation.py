@@ -11,4 +11,15 @@ for i in range(t+1,len(l)):
 for i in range(m,t+1):
     l2+=l[i]
 print(int(l2)+s)
+
+ #  or using slicing 
+    
+l= list(map(int,input().split(",")))
+n1= sum(l[:l.index(5)]) + sum(l[l.index(8) + 1:])
+l =l[l.index(5):l.index(8) + 1]
+n2= ""
+for i in l:
+   n2 += str(i)
+print(int(n2)+n1)
+
     
